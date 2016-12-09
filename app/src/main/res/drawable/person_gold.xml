@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/main_rb_text_selected"></solid>
+    <!--<gradient android:startColor="@color/main_rb_text_selected" android:endColor="@color/main_rb_text_selected"/>-->
+    <stroke android:width="0dp" android:color="@color/main_rb_text_selected"></stroke>
+    <corners android:radius="20dp"></corners>
+</shape>

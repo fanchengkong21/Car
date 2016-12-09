@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kfc.productcar">
+
+    <uses-sdk tools:overrideLibrary="cn.bingoogolapple.photopicker,cn.bingoogolapple.androidcommon.adapter" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.main.MainActivity" />
+        <activity android:name=".ui.main.LoginActivity" />
+        <activity android:name=".ui.main.Forget_PasswordActivity" />
+        <activity android:name=".ui.main.RegisterActivity" />
+        <activity android:name=".ui.main.LocationActivity" />
+        <activity android:name=".ui.forum.ForumDetailsActivity" />
+        <activity android:name=".ui.forum.AddForumActivity" />
+        <!-- 高德地图定位 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="93e40e947d8850746cd5a44a3bac0560" />
+        <!-- 高德地图定位结束 -->
+        <activity
+            android:name=".ui.main.QrcodeActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.main.HomeActivity" />
+        <activity android:name=".ui.main.ForumActivity" />
+        <activity android:name=".ui.main.ServiceActivity" />
+        <activity android:name=".ui.main.PersonActivity" />
+        <activity android:name=".ui.main.WeclomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.home.DealerDetailsActivity" />
+        <activity android:name=".ui.home.HomeIntroduceActivity" />
+        <activity android:name=".utils.PreviewActivity" />
+        <activity android:name=".ui.person.PersonalDataActivity" />
+        <activity android:name=".ui.person.BoundPhoneActivity" />
+        <activity android:name=".ui.person.CarFriendsActivity" />
+        <activity android:name=".ui.person.FunctionSettingActivity" />
+        <activity android:name=".ui.person.LeaveMessageActivity" />
+        <activity android:name=".ui.person.MyCollectionActivity" />
+        <activity android:name=".ui.person.NewPasswordActivity" />
+        <activity android:name=".ui.person.RealNameActivity" />
+        <activity android:name=".ui.person.SalesRepActivity" />
+        <activity android:name=".ui.home.WeatherActivity" />
+        <activity android:name=".ui.person.HotLineActivity" />
+        <activity android:name=".ui.main.InvitationActivity" />
+        <activity android:name=".ui.person.BindDelarerActivity" />
+        <activity android:name=".ui.person.AddFriendActivity" />
+        <activity
+            android:name=".ui.person.FriendChatActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.person.MessageActivity"></activity>
+    </application>
+
+</manifest>

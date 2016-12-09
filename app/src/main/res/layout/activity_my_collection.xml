@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_collection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/realName"
+    android:fitsSystemWindows="true"
+    tools:context="com.kfc.productcar.ui.person.MyCollectionActivity">
+    <include
+        layout="@layout/activity_title_personin"
+        android:id="@+id/collection_title"></include>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/collection_title"></ListView>
+
+</RelativeLayout>

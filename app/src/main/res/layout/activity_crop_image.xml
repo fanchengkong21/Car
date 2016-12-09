@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    tools:context=".utils.PreviewActivity" >
+
+    <com.kfc.productcar.utils.ClipImageView
+        android:id="@+id/src_pic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/relativeLayout1" />
+
+    <com.kfc.productcar.utils.ClipView
+        android:id="@+id/clipview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/relativeLayout1" />
+
+    <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff" >
+
+        <Button
+            android:id="@+id/btn_crop_n"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/main_rb_text"
+            android:text="@string/camera_cancel"
+            android:textColor="@color/main_title" />
+
+        <Button
+            android:id="@+id/btn_crop_y"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/main_rb_text_selected"
+            android:text="@string/camera_sure"
+            android:textColor="@color/main_title" />
+    </LinearLayout>
+
+</RelativeLayout>

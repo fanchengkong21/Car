@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_margin="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/person"
+        app:riv_corner_radius="20dip"
+        app:riv_mutate_background="true"
+        app:riv_tile_mode="repeat"
+        android:id="@+id/message_image"
+        app:riv_oval="true" />
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/message_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_layout"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_name"
+            android:text="prf"
+            android:textSize="20sp"
+            android:textColor="@color/status_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-12-08"
+            android:layout_alignParentRight="true"
+            android:id="@+id/message_titme"
+            android:textSize="20sp"
+            android:textColor="@color/gray_deep"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_toRightOf="@id/message_image"
+        android:layout_below="@id/message_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="你好你好你好你好你好奶好年后"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/gray_deep"
+        android:id="@+id/message_tv"/>
+
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"></View>
+
+</RelativeLayout>

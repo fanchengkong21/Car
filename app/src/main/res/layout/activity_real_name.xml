@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_real_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/realName"
+    tools:context="com.kfc.productcar.ui.person.RealNameActivity">
+    <include
+        layout="@layout/activity_title_realname"
+        android:id="@+id/real_title"></include>
+    <EditText
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入您的真实姓名"
+        android:id="@+id/input_et"
+        android:background="@color/main_title"
+        android:layout_below="@id/real_title"
+        android:textColor="@color/status_color"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

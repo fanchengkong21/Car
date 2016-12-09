@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="main_title">#fff</color>
+    <color name="parting_line">#ED949F</color>
+    <color name="status_color">#191A1A</color>
+    <color name="main_login">#f00</color>
+    <color name="login_text">#F4D8DF</color>
+    <color name="city_line">#C0C0C0</color>
+    <color name="divider">#E5E5E5</color>
+    <color name="gray">#E0E0E0</color>
+    <color name="gray_deep">#727373</color>
+    <color name="gray_bg">#f6f5f5</color>
+    <color name="main_rb_text">#553589</color>
+    <color name="main_rb_text_selected">#FF4146</color>
+    <color name="realName">#F9F9F9</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="blue">#2e91fe</color>
+    <color name="black">#000000</color>
+
+</resources>

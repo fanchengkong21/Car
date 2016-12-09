@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_personal_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.kfc.productcar.ui.person.PersonalDataActivity">
+    <include
+        layout="@layout/activity_title_personsave"
+        android:id="@+id/person_title"
+        ></include>
+    <ListView
+        android:scrollbars="none"
+        android:divider="@null"
+        android:layout_below="@id/person_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/personal_listview">
+    </ListView>
+
+</RelativeLayout>

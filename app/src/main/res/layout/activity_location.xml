@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_location"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/main_title"
+    tools:context="com.kfc.productcar.ui.main.LocationActivity">
+    <include
+        layout="@layout/activity_title_city"
+        android:id="@+id/city_title"></include>
+            <TextView
+                android:layout_below="@id/city_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="16sp"
+                android:textColor="@color/status_color"
+                android:paddingBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/index"
+                android:text="@string/location_city"/>
+            <TextView
+                android:layout_below="@id/index"
+                android:id="@+id/tv_located_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingBottom="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/main_login"/>
+            <ListView
+                android:layout_below="@id/tv_located_city"
+                android:layout_width="match_parent"
+                android:id="@+id/listview"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:divider="@null"
+                />
+
+
+    <com.kfc.productcar.view.IndexBar
+        android:layout_width="30dp"
+        android:id="@+id/quickbar"
+        android:layout_below="@id/tv_located_city"
+        android:layout_alignParentRight="true"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:layout_marginBottom="30dp"
+        />
+    <TextView
+        android:layout_width="80dp"
+        android:layout_centerInParent="true"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:id="@+id/suoyin"
+        android:visibility="gone"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:layout_height="80dp" />
+</RelativeLayout>

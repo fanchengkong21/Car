@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_friend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/realName"
+    android:fitsSystemWindows="true"
+    tools:context="com.kfc.productcar.ui.person.AddFriendActivity">
+    <include
+        layout="@layout/activity_title_personin"
+        android:id="@+id/add_title"></include>
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textSize="20sp"
+        android:text="@string/add"/>
+    <EditText
+        android:id="@+id/add_edt"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:layout_above="@id/add_btn"
+        />
+
+</RelativeLayout>

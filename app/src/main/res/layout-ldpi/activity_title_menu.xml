@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@null"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/menu_back"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:background="@null"
+        android:drawableLeft="@mipmap/person_back" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_deep"></View>
+
+    <Button
+        android:id="@+id/btn_forum_zan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btn_forum_collect"
+        android:background="@null"
+        android:gravity="left|center_vertical"
+        android:drawableLeft="@mipmap/forum_details_zan"
+        android:drawablePadding="5dp"
+        android:textSize="16sp"/>
+
+    <Button
+
+        android:id="@+id/btn_forum_collect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btn_forum_link"
+        android:layout_toStartOf="@+id/btn_forum_link"
+        android:background="@null"
+        android:gravity="left|center_vertical"
+        android:drawableLeft="@mipmap/forum_details_collect"
+        android:drawablePadding="5dp"
+        android:textSize="16sp"/>
+
+    <ImageView
+
+        android:id="@+id/btn_forum_link"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/forum_details_link"
+        android:paddingRight="20dp"/>
+
+</RelativeLayout>

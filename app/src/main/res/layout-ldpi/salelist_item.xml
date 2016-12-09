@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_margin="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/person"
+        app:riv_corner_radius="20dip"
+        app:riv_mutate_background="true"
+        app:riv_tile_mode="repeat"
+        android:id="@+id/salelist_image"
+        app:riv_oval="true" />
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/salelist_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/salelist_name"
+        android:textColor="@color/status_color"
+        android:text="张家辉"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/salelist_image"
+        android:layout_below="@id/salelist_name"
+        android:id="@+id/salelist_type"
+        android:text="销售顾问"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/gray_deep"/>
+    <ImageView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@mipmap/telephone"
+        android:layout_alignParentRight="true"
+        android:id="@+id/salelist_phone"
+        />
+    <View
+        android:layout_below="@id/salelist_image"
+        android:layout_marginLeft="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_deep"></View>
+
+</RelativeLayout>

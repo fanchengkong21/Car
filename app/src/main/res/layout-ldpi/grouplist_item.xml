@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:scaleType="fitXY"
+        android:id="@+id/group_image"/>
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_title"
+        android:textSize="18sp"
+        android:text="北京鹏龙星徽(潘家园展厅)"
+        android:padding="5dp"/>
+    <TextView
+        android:id="@+id/group_distance"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_title"
+        android:textSize="16sp"
+        android:text="14公里"
+        android:padding="5dp"/>
+
+</RelativeLayout>

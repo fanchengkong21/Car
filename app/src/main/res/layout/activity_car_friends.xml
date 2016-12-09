@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_car_friends"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/realName"
+    android:fitsSystemWindows="true"
+    tools:context="com.kfc.productcar.ui.person.CarFriendsActivity">
+    <include
+        android:id="@+id/friends_title"
+        layout="@layout/activity_title_friend"></include>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_below="@id/friends_title"
+        android:id="@+id/friend_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/friend_listview"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:layout_below="@id/friends_title"></ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+</RelativeLayout>

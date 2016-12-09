@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_invitation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.kfc.productcar.ui.main.InvitationActivity">
+    <include
+        layout="@layout/activity_title_personin"
+        android:id="@+id/code_title"></include>
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/code_image"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/code_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/status_color"
+        android:textSize="20sp"
+        android:text="@string/qrcode"/>
+
+</RelativeLayout>

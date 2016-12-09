@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_dealer_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.kfc.productcar.ui.home.DealerDetailsActivity">
+    <include
+        layout="@layout/activity_title_home_back"
+        android:id="@+id/dealer_title"></include>
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_below="@id/dealer_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                app:indicator_height="6dp"
+                app:indicator_width="6dp"
+                app:image_scale_type="center_crop"
+                app:indicator_drawable_unselected="@drawable/unselected_radius"
+                app:indicator_drawable_selected="@drawable/selected_radius"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:scrollbars="none"
+                android:id="@+id/dealer_center"
+                android:layout_below="@+id/banner">
+            </android.support.v7.widget.RecyclerView>
+            <View
+                android:id="@+id/dealer_line"
+                android:layout_below="@id/dealer_center"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray"></View>
+            <com.kfc.productcar.utils.NoScrollListView
+                android:id="@+id/dealer_bottom"
+                android:layout_below="@id/dealer_line"
+                android:numColumns="3"
+                android:horizontalSpacing="10dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+            </com.kfc.productcar.utils.NoScrollListView>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

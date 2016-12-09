@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@null"
+     >
+
+    <Button
+        android:id="@+id/friend_back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:background="@null"
+        android:drawableLeft="@mipmap/person_back"
+        />
+
+    <TextView
+        android:id="@+id/friend_riders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/friend_back"
+        android:textColor="@color/main_rb_text_selected"
+        android:enabled="true"
+        android:text="@string/friend_riders"
+        android:textSize="22sp" />
+    <View
+        android:id="@+id/riders_view"
+        android:layout_width="85dp"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/friend_back"
+        android:background="@color/main_rb_text_selected"></View>
+    <TextView
+        android:id="@+id/friend_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/friend_riders"
+        android:text="@string/friend_apply"
+        android:textColor="@drawable/friend_text"
+        android:textSize="22sp" />
+    <View
+        android:visibility="gone"
+        android:id="@+id/apply_view"
+        android:layout_width="85dp"
+        android:layout_height="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/friend_riders"
+        android:background="@color/main_rb_text_selected"></View>
+    <TextView
+        android:id="@+id/add_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="@string/add_friend"/>
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"></View>
+
+</RelativeLayout>
